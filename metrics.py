@@ -13,9 +13,8 @@ def relative_risk_contribution(sigma, w):
 
 # Vanilla backtesting
 # Cumulative returns
-def backtest(test_data, portfolio):
-    test_daily_returns = test_data.pct_change()
-    cumulative_returns = (1 + (test_daily_returns @ portfolio)).cumprod()
+def backtest(test_returns, portfolio):
+    cumulative_returns = (1 + (test_returns @ portfolio)).cumprod()
     return cumulative_returns
 
 
