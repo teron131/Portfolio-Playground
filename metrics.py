@@ -13,7 +13,7 @@ def relative_risk_contribution(sigma, w):
 
 # Vanilla backtesting
 # Cumulative returns
-def backtest(test_returns, portfolio):
+def cumulative_returns(test_returns, portfolio):
     cumulative_returns = (1 + (test_returns @ portfolio)).cumprod()
     return cumulative_returns
 

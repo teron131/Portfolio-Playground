@@ -18,6 +18,8 @@ STOCKS = [
 ]
 
 # Time period settings
-START_YEAR = 2023
-ADJUST_PERIOD = 60  # days
+START_YEAR = 2015
+ADJUST_PERIOD = 90  # days
 ROLLING_WINDOW = 60  # days
+
+STRATEGY_COLORS = {"EWP": "C0", "RPP": "C1", "CVaRP": "C2"}
